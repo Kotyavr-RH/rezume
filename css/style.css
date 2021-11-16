@@ -19,7 +19,7 @@ body {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    margin: 100px 0 20px 0;
+    margin: 0 0 20px 0;
 }
 .h3-main-section {
     color: black;
@@ -32,7 +32,6 @@ body {
     color: white;
     font-weight: bold;
     font-size: 22px;
-
 }
 
 .h4-main-section {
@@ -84,6 +83,7 @@ body {
     line-height: 24px;
     color: #595959;
 }
+
 .li-project-section-text3 {
     padding-right: 4px;
     font-style: normal;
@@ -141,16 +141,19 @@ body {
     font-size: 12px;
     line-height: 15px;
 }
+
 /* Colorrs cpetial */
 
 .orange-text {
     color: #fb6d3a ;
 }
+
 .black-text-borders {
     font-style: normal;
     font-weight: normal;
     color: black;   
 }
+
 .black-text-borders-bold {
     font-weight: bold;
     color: black;
@@ -161,17 +164,18 @@ body {
 .main-section {
     display: flex;
     flex-direction: row-reverse;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 6px 6px 20px rgb(0 0 0 / 10%);
+
 }
 
 .main-content-section {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    width: 1200px;
-    margin: 40px auto;
+    margin: 100px 0 100px 0;
 }
 
 .about-me-section {
@@ -237,13 +241,19 @@ body {
     color: #fff;
 
 }
+
 /* Contacts section */
+
 .contacts-side-section {
-    margin: 20px 0 30px 40px;
+    margin: 50px 0 0 40px;
     
 }
 
 .contacts-section-type {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
     margin-right: 10px;
 }
 
@@ -252,14 +262,12 @@ body {
 }
 
 .tech-skills-section {
-    margin-left: 40px;
-    margin: 20px 0 30px 40px;
+    margin: 50px 0 0 40px;
 
 }
 
 .soft-skills-section {
-    margin-left: 40px;
-    margin: 20px 0 30px 40px;
+    margin: 50px 0 0 40px;
 
 }
 
