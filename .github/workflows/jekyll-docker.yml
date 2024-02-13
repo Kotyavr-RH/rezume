@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: nxinx page CI
 
 on:
   push:
@@ -13,8 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the site in the jekyll/builder container
+    - name: run nginx container with site
       run: |
         docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/web:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+        -p 80:80 -v ${{ github.workspace }}/web:/usr/share/nginx/html nginx
