@@ -16,4 +16,4 @@ jobs:
     - name: run nginx container with site
       run: |
         docker run \
-        -p 80:80 -v ${{ github.workspace }}/web:/usr/share/nginx/html nginx
+        -v ${{ github.workspace }}:/usr/share/nginx/html -p 80:80 -d nginx
