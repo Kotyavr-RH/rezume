@@ -1,0 +1,5 @@
+name: 'resume host'
+description: 'start container with nginx'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
